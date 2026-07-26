@@ -77,14 +77,22 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Chetan Lifters — 24x7 Forklift Rental & Service" },
+      {
+        name: "description",
+        content:
+          "Chetan Lifters offers 24x7 forklift rental and maintenance — 3T, 5T & 10T diesel forklifts with same-day dispatch across the region.",
+      },
+      { name: "author", content: "Chetan Lifters" },
+      { property: "og:title", content: "Chetan Lifters — 24x7 Forklift Rental & Service" },
+      {
+        property: "og:description",
+        content:
+          "24x7 forklift rental & maintenance — reserve 3T, 5T or 10T diesel forklifts in seconds via WhatsApp.",
+      },
       { property: "og:type", content: "website" },
-      { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { property: "og:site_name", content: "Chetan Lifters" },
+      { name: "twitter:card", content: "summary" },
     ],
     links: [
       {
