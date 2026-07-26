@@ -77,6 +77,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
+      { name: "google-site-verification", content: "uXSJls-cq64JmRzgPJT7iKh4GS_nJGMi3TR8PBOQJi0" },
       { title: "Chetan Lifters — 24x7 Forklift Rental & Service" },
       {
         name: "description",
