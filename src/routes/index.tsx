@@ -22,10 +22,56 @@ export const Route = createFileRoute("/")({
         content: "Reserve 3T, 5T or 10T diesel forklifts in seconds. 24x7 on-call support.",
       },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://forklift-on-rent.lovable.app/" },
       { name: "twitter:card", content: "summary" },
     ],
     links: [
+      { rel: "canonical", href: "https://forklift-on-rent.lovable.app/" },
       { rel: "preload", as: "image", href: heroImg, fetchpriority: "high" } as any,
+    ],
+    scripts: [
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "LocalBusiness",
+          name: "Chetan Lifters",
+          description:
+            "24x7 forklift rental and maintenance — 3T, 5T and 10T diesel forklifts with same-day dispatch.",
+          telephone: "+91-9810413452",
+          email: "ashusuyavanshi@gmail.com",
+          url: "https://forklift-on-rent.lovable.app/",
+        }),
+      },
+      {
+        type: "application/ld+json",
+        children: JSON.stringify({
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Product",
+              name: "3 Ton Diesel Forklift Rental",
+              description:
+                "Light to medium loads. Ideal for warehouses and short runs.",
+              brand: { "@type": "Brand", name: "Chetan Lifters" },
+            },
+            {
+              "@type": "Product",
+              name: "5 Ton Diesel Forklift Rental",
+              description:
+                "Our most-rented workhorse. Balanced power and reach.",
+              brand: { "@type": "Brand", name: "Chetan Lifters" },
+            },
+            {
+              "@type": "Product",
+              name: "10 Ton Diesel Forklift Rental",
+              description:
+                "Heavy-duty loads and containers. Operator available on request.",
+              brand: { "@type": "Brand", name: "Chetan Lifters" },
+            },
+          ],
+        }),
+      },
     ],
   }),
   component: Index,
